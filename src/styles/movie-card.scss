@@ -1,5 +1,12 @@
 .movie-card {
   position: relative;
+  opacity: 0.7;
+
+  transition: 0.2s;
+
+  &:hover {
+    opacity: 1;
+  }
 
   img {
     width: 14.31rem;
