@@ -9,6 +9,8 @@ interface SidebarProps {
 }
 
 import '../styles/sidebar.scss';
+import { useMemo } from "react";
+import { useCallback } from "react";
 
 export function SideBar({ setMovies, setSelectedGenre }: SidebarProps) {
   const [selectedGenreId, setSelectedGenreId] = useState(1);
@@ -31,9 +33,9 @@ export function SideBar({ setMovies, setSelectedGenre }: SidebarProps) {
     })
   }, [selectedGenreId]);
 
-  function handleClickButton(id: number) {
+  const handleClickButton = useCallback(async (id: number) => {
     setSelectedGenreId(id);
-  }
+  }, []);
 
   return (
     <nav className="sidebar">
