@@ -89,7 +89,7 @@ Screen Shots
 
 - Home
 
-![ScreenShot](/assets/home.png)
+![ScreenShot](/src/assets/home.png)
 
 <br/>
 
